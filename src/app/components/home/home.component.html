@@ -1,0 +1,514 @@
+<!--Header Component-->
+<app-header></app-header>
+<!-- inicio Section Begin -->
+<section class="hero-section">
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <div class="slImg1 img_baner">
+        <div class="bttn">
+        <a class="estudia m-2 text-white" routerLink="/cursos-disponibles">Estudia con nosotros</a>
+        <a class="instructores text-white m-2" routerLink="/entrenadores"><i class="fas fa-graduation-cap text-warning"></i> Instructores certificados</a>
+        <a class="estudia text-white    m-2" routerLink="/tienda">Nuestros productos</a>
+
+        </div>
+
+        <div class="d-none d-lg-block">
+            <div class="bttn1 m-4">
+               <h1 class="wlcome"><img src="../../../assets/img/logoSF.png"  class="logoSF"></h1>
+               <h3 class="text-white mt-4">Instituto Internacional del Deporte y las Ciencias Aplicadas</h3>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="carousel-item">
+
+      <div class="slImg2 img_baner">
+        <div class="bttn">
+        <a class="estudia m-2" routerLink="/cursos-disponibles">Estudia con nosotros</a>
+        <a class="instructores m-2" routerLink="/entrenadores"><i class="fas fa-graduation-cap text-warning"></i> Instructores certificados</a>
+        <a class="estudia m-2" routerLink="/tienda">Nuestros productos</a>
+        </div>
+
+
+        <div class="d-none d-lg-block">
+            <div class="bttn1 m-4">
+                
+                <h1 class="wlcome"><img src="../../../assets/img/logoSF.png"  class="logoSF"></h1>
+               <h3 class="text-white mt-4">Instituto Internacional del Deporte y las Ciencias Aplicadas</h3>
+            </div>
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="carousel-item">
+
+      <div class="slImg3 img_baner">
+        <div class="bttn">
+        <a class="estudia m-2" routerLink="/cursos-disponibles">Estudia con nosotros</a>
+        <a class="instructores m-2" routerLink="/entrenadores"><i class="fas fa-graduation-cap text-warning"></i> Instructores certificados</a>
+        <a class="estudia m-2" routerLink="/tienda">Nuestros productos</a>
+        </div>
+
+
+        <div class="d-none d-lg-block">
+            <div class="bttn1 m-4">
+                <h1 class="wlcome"><img src="../../../assets/img/logoSF.png"  class="logoSF"></h1>
+               <h3 class="text-white mt-4">Instituto Internacional del Deporte y las Ciencias Aplicadas</h3>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="carousel-item">
+
+      <div class="slImg4 img_baner">
+        <div class="bttn">
+        <a class="estudia m-2" routerLink="/cursos-disponibles">Estudia con nosotros</a>
+        <a class="instructores m-2" routerLink="/entrenadores"><i class="fas fa-graduation-cap text-warning"></i> Instructores certificados</a>
+        <a class="estudia m-2" routerLink="/tienda">Nuestros productos</a>
+        </div>
+
+      </div>
+
+      <div class="d-none d-lg-block">
+        <div class="bttn1 m-4">
+            <h1 class="wlcome"><img src="../../../assets/img/logoSF.png"  class="logoSF"></h1>
+               <h3 class="text-white mt-4">Instituto Internacional del Deporte y las Ciencias Aplicadas</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+</section>
+
+<!-- Inicio End -->
+
+
+
+<!--Inicio Boton de whatssap-->
+<a href="https://wa.me/5491166090614?text=Comunicate%20con%20nosotros" class="whatsapp" target="_blank"> <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+<!--END boton de whatssap-->
+
+<!-- nosotros-->
+<section class="feature-section" id="">
+  <div class="container-fluid">
+      <div class="row" id="crflt">
+
+          <div class="col-md-4 d-flex justify-content-center">
+              <div class="feature-item set-bg m-4" data-setbg="assets/img/feature/feature-3.jpg">
+                  <h3 class="text-white">SISTEMA DE FINANCIACION</h3>
+                  <p class="text-white">IIDCA te ofrece sistemas de pago para que puedas acceder de una manera fácil a nuestras certificaciones y así ampliar tus conocimientos del mundo fitness.<br /></p>
+                  <a href="https://wa.me/5491166090614?text=Cordial%20saludo%20deseo%20informacion%20sobre%20la%20financiación" class="primary-btn f-btn text-white" target="_blank"><i class="fab fa-whatsapp fa-lg"></i>FINANCIA</a>
+              </div>
+          </div>
+
+          <div class="col-md-8 d-flex justify-content-center">
+              <!-- Carrusel -->
+              <ngb-carousel class="carousel-custom m-4" [interval]="2000" #carousel>
+                  <ng-template ngbSlide *ngFor="let cur of listadoCurso">
+                      <div class="picsum-img-wrapper">
+                          <img class="img-slide" src="{{ pathImg + cur.cur_foto1 }}" (click)="irCurso( cur.cur_id )" alt="Random slide">
+                      </div>
+                  </ng-template>
+              </ngb-carousel>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<!-- Feature Section End -->
+
+
+
+
+
+<!-- Profesores -->
+<div id="instructores">
+    <section class="classes-section">
+        <div class="class-title set-bg" data-setbg="assets/img/classes-title-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 m-auto text-center">
+                        <div class="section-title pl-lg-4 pr-lg-4 pl-0 pr-0">
+                            <h2>Profesores certificados con nosotros</h2>
+                            <a routerLink="/entrenadores" class="estudia text-white">Conocelos todos</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 text-white">
+                        <ngb-carousel>
+                            <ng-template ngbSlide *ngFor="let ins of instructores.slice(0, 5)">
+                                <div class="picsum-img-wrapper">
+                                    <img src="{{ pathImg + ins.ins_foto1 }}" alt="Random slide">
+                                </div>
+                                <div class="carousel-caption section-title pl-lg-4 pr-lg-4 pl-0 pr-0">
+                                    <h2>{{ ins.ins_nombre }} {{ ins.ins_apellido }}</h2>
+                                </div>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CProfesores End -->
+</div>
+<!-- Mision -->
+<section class="home-about spad" id="quienes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h1 class="bh1 text-danger">Bienvenido a IIDCA</h1>
+                     <h3 class="bh3 text-danger">Instituto internacional del deporte y las ciencias aplica</h3>
+                     <br>
+
+                    <p>
+                        Bienvenidos al sitio oficial del “IIDCA Academy”, departamento encargado de la Educación y el desarrollo profesional de la Industria del Fitness en Latinoamérica para la Fundación IIDCA. Aquí fomentamos el desarrollo de negocios entre los diversos actores del sector, la formación profesional con los más altos estándares académicos mundiales y su revalidación, la empleabilidad y el emprendimiento. 
+                        IIDCA como Organismos del Fitness Latinoamericano, fija los estándares para conectar a la educación de la región con los requisitos mundiales, influyendo en la creación de políticas públicas de hábitos saludables, asesoramiento a gobiernos para conseguir una reducción exitosa del gasto en salud pública, así como también la prevención de enfermedades o la disminución de mortandad en la población gracias al movimiento y la alimentación saludable. 
+
+                    </p>
+                    <a class="estudia bg-primary f-btn text-white" routerLink="/cursos-disponibles">Estudia con nosotros</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="assets/img/home-about.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+    
+
+<!-- Sedes 
+<div id="sedes" *ngIf="this.sedes.length > 0">
+  <section class="classes-section">
+      <div class="class-title set-bg" data-setbg="assets/img/fondo_empresas_ws.jpg">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 m-auto text-center">
+                      <div class="section-title pl-lg-4 pr-lg-4 pl-0 pr-0">
+                          <h2 class="text-danger">SEDES</h2>
+                          <a routerLink="/SedesF" class="estudia text-danger">Conocelas todas</a>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-5 text-white">
+                      <ngb-carousel>
+                          <ng-template ngbSlide *ngFor="let sed of sedes.slice(0, 5)">
+                              <div class="picsum-img-wrapper">
+                                  <img src="{{ pathImg + sed.sed_foto1 }}" alt="Random slide">
+                              </div>
+
+                          </ng-template>
+                      </ngb-carousel>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+ 
+</div>
+-->
+
+
+
+
+<!-- cronograma semana  pero no se pone hasta definir-->
+<!-- <app-cronograma></app-cronograma>-->
+<!-- Cronogrma semanal End -->
+
+<!-- Planes pero no se pone hasta definir-->
+<!-- <app-planes></app-planes> -->
+<!--Planes Section End -->
+
+<!-- Section Servicios -->
+<section class="chooseus-section spad" id="servicios">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2 class="text-danger">Nuestros servicios</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-1.png" alt="">
+                    <h5 class="text-danger">Soporte personalizado</h5>
+                    <p>
+                        ¿Tienes dudas sobre nuestras certificaciones o productos? ¡Estamos aquí para ayudarte! Déjanos tu número y te llamaremos, o si prefieres, contáctanos directamente por teléfono o vía WhatsApp. ¡Esperamos tu mensaje!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-2.png" alt="">
+                    <h5 class="text-danger">Alianza e inscripciones de gimnasios</h5>
+                    <p>
+                        ¿Tienes una empresa de fitness, representas a un Organismo o Universidad? ¡Únete a nosotros! Acredita o promociona tus cursos en nuestra web, y si tienes un gimnasio, disfruta del beneficio de publicar gratis: 5 fotos, el perfil de tu gimnasio y su geolocalización en Google Maps. ¡No pierdas esta oportunidad y alíarte con el organismo del Fitness y el Bienestar para Latinoamérica hoy mismo!"
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-3.png" alt="">
+                    <h5 class="text-danger">Entrena con nosotros</h5>
+                    <p>Visita nuestra página y encuentra instructores acreditados con los más altos estándares mundiales. ¡Comienza tu entrenamiento hoy mismo en el horario y modalidad que mejor se adapten a ti! Tu bienestar está a un clic de distancia.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-4.png" alt="">
+                    <h5 class="text-danger">Articulos deportivos y suplementos</h5>
+                    <p>¡Visita nuestro stand y descubre una amplia gama de artículos deportivos, productos y servicios ofrecidos por nuestras empresas miembro IIDCA! Encuentra todo lo que necesitas para entrenar, mejorar tu rendimiento y cuidar tu salud. Equípate con lo mejor y alcanza tus objetivos. ¡No te lo pierdas!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-5.png" alt="">
+                    <h5 class="text-danger">Asesoria en entrenamientos</h5>
+                    <p>En IIDCA creemos en la importancia de formar profesionales ejemplares que promuevan la actividad física como clave para la salud preventiva. Apostamos por una educación de calidad que te permita generar ingresos, emprender en cualquier negocio, y convertirte en un referente en la industria, ya sea en educación, negocios tradicionales o a través de innovadoras aplicaciones que mejoren la vida de las personas. Únete a nuestros eventos 'Muévete por la vida' o crea los tuyos con nuestro respaldo. ¡Sé parte del cambio!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="choose-item">
+                    <img src="assets/img/icons/chose-icon-6.png" alt="">
+                    <h5 class="text-danger">Guia alimenticia</h5>
+                    <p>IIDCA te ofrece recursos tecnológicos, oportunidades de empleo y servicios innovadores para impulsar tu crecimiento profesional. Accede a apps de prescripción de ejercicio, herramientas administrativas, gimnasios virtuales para monetizar desde casa a nivel global, y mucho más. ¡Empieza a crecer con nosotros hoy mismo!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Servicios End -->
+
+<!-- Informacion Section Opcional -->
+<!--<app-informacion></app-informacion>-->
+<!-- Informacion Section End -->
+
+
+
+<!-- Cta Section Begin -->
+<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta-text">
+                    <h3>Estudia con nosotros</h3>
+                    <p>Empieza a capacitarte con nosotros!</p>
+                </div>
+                <a href="#" class="primary-btn cta-btn" routerLink="/cursos-disponibles">COMIENZA</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cta Section End -->
+
+<!-- Map Section Begin
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d188618.51311104256!2d-71.236572!3d42.381647!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1576756626784!5m2!1sen!2sbd" height="590" style="border: 0" allowfullscreen=""></iframe>
+    <div class="map-contact-detalis">
+        <div class="open-time">
+            <h5>Weekday:</h5>
+            <ul>
+                <li>Weekday:
+                    <span>06:30 - 11:00</span>
+                </li>
+                <li>Saturday:
+                    <span>07:00 - 22:00</span>
+                </li>
+                <li>Sunday:
+                    <span>09:00 - 18:00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="map-contact-form">
+            <h5>Contact Us</h5>
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="text" class="phone" placeholder="Phone">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="site-btn">Submit Now</button>
+            </form>
+        </div>
+    </div>
+</div>
+-->
+<!-- Map Section End -->
+<!-- Contact Section Begin -->
+<section class="contact-section spad" id="contacto">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h4 class="text-danger">Informacion</h4>
+                    <ul>
+                        <li class="text-danger"><i class="fa fa-phone"></i>5491166090614</li>
+                        <li class="text-danger"><i class="fa fa-phone"></i>5491166090614</li>
+                        <li class="text-danger">contacto&#64;iidca.com</li>
+                    </ul>
+
+                </div>
+                <!--
+              <div class="contact-address">
+                  <h4>Address</h4>
+                  <ul>
+                      <li><i class="fa fa-map-marker"></i> Iris Watson, Mary land, United State., New York City
+                      </li>
+                  </ul>
+              </div>
+              -->
+            </div>
+
+
+
+            <div class="col-lg-7 offset-lg-1">
+                <div class="contact-form">
+                    <h4 class="text-danger">Envianos tu mensaje</h4>
+                    <small class="text-danger mb-5" *ngIf="envioEmail">Mensaje enviado exitosamente</small>
+                    <form [formGroup]="frmContact" (ngSubmit)="enviarCorreo()">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" formControlName="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" formControlName="email" placeholder="Correo electronico">
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea formControlName="mensaje" placeholder="Mensaje"></textarea>
+                                <button type="submit" class="c-btn">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <!--
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="footer-logo-item">
+                  <div class="f-logo">
+                      <a href="#"><img src="/assets/img/logo.jpg" alt=""></a>
+                  </div>
+                  <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
+                      in television advertising continues.</p>
+
+              </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+              <div class="footer-widget">
+                  <h5>Our Blog</h5>
+                  <div class="footer-blog">
+                      <a href="#" class="fb-item">
+                          <h6>Most people who work</h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                      </a>
+                      <a href="#" class="fb-item">
+                          <h6>Freelance Design Tricks How </h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                      </a>
+                      <a href="#" class="fb-item">
+                          <h6>have a computer at home have had </h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="footer-widget">
+                  <h5>Program</h5>
+                  <ul class="workout-program">
+                      <li><a href="#">Bodybuilding</a></li>
+                      <li><a href="#">Running</a></li>
+                      <li><a href="#">Streching</a></li>
+                      <li><a href="#">Weight Loss</a></li>
+                      <li><a href="#">Gym Fitness</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="footer-widget">
+                  <h5>Get Info</h5>
+                  <ul class="footer-info">
+                      <li>
+                          <i class="fa fa-phone"></i>
+                          <span>Phone:</span>
+                          (12) 345 6789
+                      </li>
+                      <li>
+                          <i class="fa fa-envelope-o"></i>
+                          <span>Email:</span>
+                          Colorlib.info@gmail.com
+                      </li>
+                      <li>
+                          <i class="fa fa-map-marker"></i>
+                          <span>Address</span>
+                          Iris Watson, Box 283 8562, NY
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+-->
+    <div class="copyright-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ct-inside">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <img src="assets/img/logo.jpg" alt="" width="50" height="40"> Copyright &copy;All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
